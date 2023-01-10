@@ -211,7 +211,6 @@ A straightforward solution is to use [well-known hash functions](https://en.wiki
 
     ![image](./images/hash-results.png)
     </details>
-    <br>
 
 All hash results are more than 7 chars long. 
 A method to make it shorter:
