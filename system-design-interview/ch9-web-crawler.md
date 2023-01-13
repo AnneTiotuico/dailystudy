@@ -30,7 +30,7 @@
 
 ### Quantify Assumptions
 - QPS (1B web pages per month)
-  - avg: 1^9 / 30 days / 18600 sec = ~400 pgs per sec
+  - avg: 1^9 / 30 days / 86400 sec = ~400 pgs per sec
   - peak: 2 * QPS = 800 pgs per sec
 - Storage (500 kb per one web pg; 5 year storage)
   - per month: 1^9 * 500 kb = 500 tb
