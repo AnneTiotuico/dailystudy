@@ -70,3 +70,6 @@ Problems of a Single Notification Server (not multiple)
 2) there's a retry on error mechanism for failed notifications put back in the messaging queue (reliability)
 3) workers use a notification template and persist data by storing notifications into the notification log
 4) monitoring/tracking systems are added for system health checks and analysis
+
+# Other Resources
+- https://www.notificationapi.com/blog/notification-service-design-with-architectural-diagrams
