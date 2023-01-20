@@ -65,6 +65,6 @@
 3) high availability of an id generator
 
 # FYI
-https://www.integrate.io/blog/snowflake-schemas-vs-star-schemas-what-are-they-and-how-are-they-different/
-a "star" schema and a "snowflake" schema
-- a "star" schema dimension tables are denormalized and in a "snowflake" schema dimension tables are normalized.
+- https://www.integrate.io/blog/snowflake-schemas-vs-star-schemas-what-are-they-and-how-are-they-different/
+- a "star" schema vs. a "snowflake" schema
+  - a "star" schema dimension tables are denormalized and in a "snowflake" schema dimension tables are normalized.
