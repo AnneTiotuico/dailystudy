@@ -269,8 +269,7 @@ Example:
 
 Steps to create a Merkle tree; assuming key space is from 1-12; highlighted boxes indicate inconsistency
 
-Step 1: Divide key space into buckets (4 in our ex)
-  - a bucket is used as the root level node to maintain a limited depth of the tree
+Step 1: Divide key space into buckets (4 in our ex); a bucket is used as the root level node to maintain a limited depth of the tree
   ![image](./images/merkle-tree1.png)
 
 Step 2: Once the buckets are created, hash each key in a bucket using a uniform hashing method
@@ -301,6 +300,7 @@ Step 4: Build the tree upwards till root by calculating hashes of children
 <summary>System architecture diagram</summary>
 
 ![image](./images/kv-architecture-diagram.png)
+
 Main features:
   - clients communicate w the k/v store through simple APIs: `get(key)` and `put(key, value)`
   - coordinator is a node that acts as a proxy between the client and k/v store
@@ -309,6 +309,7 @@ Main features:
   - data is replicated at multiple nodes
   - there is no SPOF, as every node has same set of responsibilities
     - each node performs many tasks:
+
     ![image](./images/node-responsibilities.png)
 
 </details>
@@ -332,10 +333,12 @@ Main features:
 - after a read request is directed a specific node, it first checks if data is in the memory cache
 
 if it is:
+
 ![image](./images/read-in-memory.png)
 
 if data is not in memory, it will be retrieved from the disk instead
-  - Bloom filter can be used to efficiently find out which SSTable contains the key
+Bloom filter can be used to efficiently find out which SSTable contains the key
+
 ![image](./images/read-not-in-memory.png)
 
 1. the system first checks if data is in memory, if not, step 2
